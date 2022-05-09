@@ -3,6 +3,8 @@ import axios from "axios";
 // Assets
 import { baseUrl } from "../api";
 import { PlusCircle } from "react-bootstrap-icons";
+//Types
+import { TWine } from "../types";
 
 //Styles
 import {
@@ -15,11 +17,11 @@ import {
 
 // Components
 import WineCard from "../components/WineCard";
-import NewWineModal from "../components/NewWineModal";
-import { Button, Spinner, Card } from "react-bootstrap";
+import AddWineModal from "../components/AddWineModal";
+import { Button, Spinner } from "react-bootstrap";
 
 export function Home() {
-  const [wineList, setWineList] = useState<any[]>([]);
+  const [wineList, setWineList] = useState<TWine[]>([]);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
 
   const fetchData = async () => {
@@ -81,7 +83,7 @@ export function Home() {
       ) : (
         <Spinner animation="border" role="status" />
       )}
-      <NewWineModal
+      <AddWineModal
         isVisible={modalVisible}
         handleClose={toogleModal}
         closeModal={refetchData}

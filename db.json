@@ -1,6 +1,20 @@
 {
   "wines": [
     {
+      "id": 1,
+      "name": "Franzia",
+      "img": "wines/franz.png",
+      "text": "It's a light-bodied, medium-dry red with blackberry aromas. Burgundy from Franzia isn't the same as a French Burgundy. Rather, it's a full-bodied, medium-sweet red wine blend with lots of fruit.",
+      "opinion": " kjnwkanjjksdnkandkansd"
+    },
+    {
+      "id": 2,
+      "name": "Barefoot Cellars",
+      "img": "wines/barefoot.png",
+      "text": "A bold red wine with tasty characteristics, Barefoot Rich Red Blend makes a charming first impression. Rich Red Blend is jammy and rich with lots of black fruit. Sweet vanilla and spice complement the smooth texture. Good with grilled ribs, dark chocolate tarts, and moments big and small.",
+      "opinion": " hejuuchaaa dupa srucha"
+    },
+    {
       "id": 3,
       "name": "Carlo Rossi",
       "img": "wines/carlo-rosi.png",
@@ -53,51 +67,11 @@
       "text": "Peter Vella Delicious Red earned its name for two very good reasons - its brilliant color and bright, fruity taste. Light-bodied and smooth on the palate, this wine has notes of strawberry and raspberry that are sure to please on hot summer days!"
     },
     {
-      "name": "",
-      "text": "",
+      "name": "Amazing Red wine",
+      "text": "Delicious for fish and sea food",
       "img": "./wines/wine-added.jpeg",
+      "type": "red",
       "id": 11
-    },
-    {
-      "name": "Proba nowego winka",
-      "text": "hejka hejka sraczka",
-      "img": "./wines/wine-added.jpeg",
-      "id": 13
-    },
-    {
-      "name": "",
-      "text": "",
-      "img": "./wines/white-added.png",
-      "type": "",
-      "id": 26
-    },
-    {
-      "name": "asAS",
-      "text": "DDSDSD",
-      "img": "./wines/wine-added.jpeg",
-      "type": "red",
-      "id": 28
-    },
-    {
-      "name": "sadsadsad",
-      "text": "sadsad",
-      "img": "./wines/white-added.png",
-      "type": "white",
-      "id": 29
-    },
-    {
-      "name": "new wine",
-      "text": "dasdsad",
-      "img": "./wines/wine-added.jpeg",
-      "type": "red",
-      "id": 30
-    },
-    {
-      "name": "Red new WIne",
-      "text": "Delicious and perfect for a dinner next to the fish",
-      "img": "./wines/wine-added.jpeg",
-      "type": "red",
-      "id": 31
     }
   ]
 }

@@ -13,7 +13,7 @@ type Props = {
   closeModal: () => void;
 };
 
-const NewWineModal = ({ isVisible, handleClose, closeModal }: Props) => {
+const AddWineModal = ({ isVisible, handleClose, closeModal }: Props) => {
   const [name, setName] = useState<string>("");
   const [wineText, setWineText] = useState<string>("");
   const [wineType, setWineType] = useState<string>("");
@@ -132,4 +132,4 @@ const NewWineModal = ({ isVisible, handleClose, closeModal }: Props) => {
   );
 };
 
-export default NewWineModal;
+export default AddWineModal;

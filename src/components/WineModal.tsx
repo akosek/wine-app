@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { TWine } from "../types";
 import { baseUrl } from "../api";
 // UI & Styles
 import { Button, Modal, Form, Row, Col } from "react-bootstrap";
@@ -10,13 +10,7 @@ import { CenteredRow } from "../styles";
 type Props = {
   isVisible: boolean;
   handleClose: () => void;
-  wineDetails: {
-    id: number;
-    name: string;
-    img: string;
-    text: string;
-    opinion?: string;
-  };
+  wineDetails: TWine;
 };
 
 const WineModal = ({ isVisible, handleClose, wineDetails }: Props) => {
@@ -94,11 +88,12 @@ const WineModal = ({ isVisible, handleClose, wineDetails }: Props) => {
             </Form.Group>
             <CenteredRow>
               <Button
+                type="submit"
                 className="align-self-center"
                 variant="success"
                 onClick={() => {
-                  saveOpinion(wineDetails.id);
                   setOpinion(opinion);
+                  saveOpinion(wineDetails.id);
                 }}
               >
                 Save
